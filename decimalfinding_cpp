@@ -1,0 +1,16 @@
+for(int i=2;i<1001;i++){
+		arr.push_back(i);
+	}
+	int i=1;
+	int indx = 0;
+	int divider = arr[indx];
+	while(indx<arr.size()){
+		for(int i = 1; i< arr.size(); i++){
+			if(arr[i]%divider==0&&arr[i]/divider!=1){
+				arr.erase(arr.begin()+i);
+			}
+			
+		}
+	indx++;
+	divider = arr[indx];
+	}
